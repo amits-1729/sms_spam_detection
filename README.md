@@ -1,31 +1,87 @@
-# SMS Spam Classifier
+# 📧 SMS Spam Classifier
 
-This project is a Machine Learning web application that predicts whether a given SMS message is Spam or Not Spam.
+A Machine Learning based SMS Spam Classifier that predicts whether an SMS is **Spam** or **Not Spam (Ham)**.  
+The model is trained using Natural Language Processing (NLP) techniques and deployed using **Streamlit** for an interactive web interface.
 
-The model is trained on an SMS dataset and deployed using Streamlit.
+---
 
-## Demo
+## 🚀 Project Overview
 
-Live App: https://your-streamlit-link.streamlit.app
+Spam sms are unwanted messages that can contain advertisements, scams, or malicious links.  
+This project uses **Machine Learning and NLP** to automatically classify sms into:
 
-## Features
+- **Spam**
+- **Not Spam (Ham)**
 
-- Predicts whether an SMS is spam or not
-- Simple and interactive web interface
-- Real-time prediction
-- Deployed using Streamlit Cloud
+The system processes the input text, converts it into numerical features, and predicts the category using a trained machine learning model.
 
-## Technologies Used
+---
+
+## 🛠️ Technologies Used
 
 - Python
-- Pandas
 - NumPy
+- Pandas
 - Scikit-learn
 - NLTK
 - Streamlit
 
-## Machine Learning Model
+---
 
-- Text preprocessing using NLTK
-- Feature extraction using TF-IDF Vectorizer
-- Model used: Multinomial Naive Bayes
+## 📊 Machine Learning Workflow
+
+1. Data Cleaning
+2. Text Preprocessing
+3. Feature Extraction using **TF-IDF Vectorizer**
+4. Model Training
+5. Model Evaluation
+6. Deployment with Streamlit
+
+---
+
+## 🔍 Text Preprocessing Steps
+
+The following preprocessing techniques were applied to the email text:
+
+- Lowercasing
+- Tokenization
+- Removing Special Characters
+- Removing Stopwords
+- Stemming
+
+These steps help improve model performance by reducing noise in the text data.
+
+---
+
+## 🤖 Model Used
+
+The classifier is trained using:
+
+- **Naive Bayes Algorithm**
+
+Naive Bayes works well for text classification problems like spam detection.
+
+---
+
+## 💡 How It Works
+- User enters an sms in the input box.
+- The text is preprocessed.
+- The trained model predicts whether the sms is Spam or Not Spam.
+- The result is displayed instantly on the web interface.
+
+
+---
+
+## 📈 Future Improvements
+- Add more advanced NLP models
+- Improve UI design
+- Deploy on cloud platforms
+- Add probability scores for predictions
+
+---
+
+Example Input:
+Congratulations! You have won a free lottery ticket. Click here to claim.
+
+Output:
+Spam
